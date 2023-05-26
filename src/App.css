@@ -1,78 +1,119 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #540b0e;
+    background-color: #540b0e;
+    vertical-align: top;
 }
 
 #root {
-  text-align: left;
-  font-family: 'Overlock';
-  background-color: #540b0e;
-  width: 100%;
-  height: 100%;  
+    text-align: left;
+    font-family: 'Overlock', serif;
+    background-color: #540b0e;
+    width: 100%;
+    height: 100%;
+    --select-border: #540b0e;
+    --select-focus: #540b0e;
+    --select-arrow: var(--select-border);
 }
 
 h1 {
-  text-align: center;
-  font-family: 'Overlock';
-  background-color: #335c67;
-  color: #fff3b0;
-  width: 100%;
+    text-align: left;
+    font-family: 'Overlock';
+    color: #fff3b0;
+    width: 100%;
+}
+
+select {
+/ / A reset of styles, including removing the default dropdown arrow appearance: none;
+/ / Additional resets for further consistency background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}
+
+.filter-container {
+    display: inline-block;
+    width: 40%;
+    min-width: 10ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.5em 0.5em;
+    font-size: 1.35rem;
+    cursor: pointer;
+    line-height: 1.2;
+    background-color: #540b0e;
+}
+
+button {
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.5em 0.5em;
+    font-size: 1.1rem;
+    cursor: pointer;
+    line-height: 1.2;
+    color: #540b0e;
+    background-color: #fff3b0;
 }
 
 
 .accordion {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
 }
 
 .accordion-title {
-  display: block;
-  font-size: 25px;
-  font-weight: bold;
-  color: #fff3b0;
-  width: 100%;
-  border-top: thin dashed #e09f3e;
-  cursor: pointer;
-  background-color: #540b0e;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff3b0;
+    width: 100%;
+    border-top: thin dashed #e09f3e;
+    cursor: pointer;
+    background-color: #540b0e;
 }
 
 .accordion-title:hover {
-  background-color: #9e2a2b;
+    background-color: #9e2a2b;
 }
 
 .accordion-title,
 .accordion-content {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 .accordion-content {
-  background-color: #e09f3e;
-  white-space: pre-line;
-  font-size: 25px;
-  color: #540b0e;
+    background-color: #e09f3e;
+    white-space: pre-line;
+    font-size: 25px;
+    color: #540b0e;
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    font-size: 15px;
-  }
+    body {
+        font-size: 15px;
+    }
 
 }
 
 .tag-container {
-  margin: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .tag {
     display: inline-block;
-    padding: 3px;
+    padding: 4px;
     text-align: center;
     min-width: 60px;
     border-radius: 10%;
-    margin-right: 10px;
+    margin-right: 15px;
     background: #fff3b0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
