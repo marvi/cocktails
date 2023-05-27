@@ -15,7 +15,8 @@ const Filters = ({tagFilter, setTagFilter, baseSpiritFilter, setBaseSpiritFilter
                     <option value="Gin">Gin</option>
                     <option value="Vodka">Vodka</option>
                     <option value="Tequila">Tequila</option>
-                    <option value="Övrigt">Övrigt</option>
+                    <option value="Sherry">Sherry</option>
+                    <option value="Brandy">Brandy</option>
                 </select>
             </div>
 
@@ -26,10 +27,13 @@ const Filters = ({tagFilter, setTagFilter, baseSpiritFilter, setBaseSpiritFilter
                     <option value="">Alla</option>
                     <option value="Klassisk">Klassisk</option>
                     <option value="Fräsch">Fräsch</option>
+                    <option value="Somrig">Somrig</option>
+                    <option value="Färgglad">Färgglad</option>
                     <option value="Skummig">Skummig</option>
                     <option value="Stiff">Stiff</option>
                     <option value="Söt">Söt</option>
                     <option value="Long">Long</option>
+                    <option value="Låg alkohol">Låg alkohol</option>
                 </select>
             </div>
             <button onClick={() => {setTagFilter(''); setBaseSpiritFilter('') }}>Nollställ</button>
