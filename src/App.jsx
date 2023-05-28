@@ -58,7 +58,12 @@ function App() {
         {recipes.length > 0 ? (
       <Accordion accordionData={recipes} />
     ) : (
-      <p>Hämtar data... </p>
+            <div className="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
     )}
       </div>
   )
