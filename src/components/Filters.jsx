@@ -10,7 +10,7 @@ const Filters = ({tagFilter, setTagFilter, baseSpiritFilter, setBaseSpiritFilter
                         value={baseSpiritFilter || ''}
                 >
                     <option value="">Alla</option>
-                    <option value="Whisky">Whisky</option>
+                    <option value="Whiskey">Whiskey</option>
                     <option value="Rom">Rom</option>
                     <option value="Gin">Gin</option>
                     <option value="Vodka">Vodka</option>
