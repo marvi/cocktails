@@ -41,7 +41,7 @@ select {
 
 .filter-container {
     display: inline-block;
-    width: 40%;
+    width: 30%;
     min-width: 10ch;
     max-width: 30ch;
     border: 1px solid var(--select-border);
@@ -56,8 +56,8 @@ select {
 button {
     border: 1px solid var(--select-border);
     border-radius: 0.25em;
-    padding: 0.5em 0.5em;
-    font-size: 1.1rem;
+    padding: 0.3em 0.3em;
+    font-size: 1.0rem;
     cursor: pointer;
     line-height: 1.2;
     color: #540b0e;
