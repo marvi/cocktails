@@ -16,6 +16,7 @@ body {
     --select-border: #540b0e;
     --select-focus: #540b0e;
     --select-arrow: var(--select-border);
+    padding: 1%;
 }
 
 h1 {

@@ -1,7 +1,6 @@
 :root {
   line-height: 1.5;
   font-weight: 400;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -10,8 +9,8 @@
 }
 
 body {
-  margin: 0;
-  display: flex;
+    margin: 0;
+    display: flex;
 }
 
 h1 {
@@ -31,7 +30,7 @@ h1 {
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background: #fff;
+    background: #fff3b0;
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 .lds-ellipsis div:nth-child(1) {
