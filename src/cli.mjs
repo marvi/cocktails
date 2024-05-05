@@ -56,8 +56,12 @@ function handleInput(input) {
         case 'show':
             showRecord(args[1]);
             break;
+        case 'menu':
+            exportMenu();
+            break;
         default:
             console.log(`Unknown command: ${command}`);
+
     }
 }
 
@@ -88,4 +92,8 @@ function filterRecords(filter) {
     filtered.forEach((record) => {
         console.log(chalk.bold(record.index + ": "), headline(record.namn));
     });
+}
+
+function exportMenu() {
+
 }
